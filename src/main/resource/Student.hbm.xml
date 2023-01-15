@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+<hibernate-mapping>
+  <class name="com.cisco.firsthibernatecode.Course" table="course" catalog="phase2_pm">
+       <id name="courseId" type="java.lang.Long">
+              <column name="courseid" />
+              <generator class="identity"></generator>
+       </id>
+       <property name="courseName" type="java.lang.String">
+               <column name="coursename"></column>
+       </property>
+        <property name="courseFees" type="java.lang.Float">
+               <column name="coursefees"></column>
+       </property>
+  </class>
+</hibernate-mapping>
